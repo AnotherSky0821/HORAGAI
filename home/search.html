@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+<meta charset="UTF-8">
+<title>サイト内検索｜ほらがい同好会</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+<link rel="stylesheet" href="./style.css">
+<script src="./lib2.min.js"></script>
+<script src="./script2.min.js"></script>
+<script src="./lib.min.js"></script>
+<script src="./script.min.js"></script>
+
+<script type="text/javascript">
+$(function()
+{
+  var q = $.url().param("q");
+	if($("html").hasClass("msie9") && (q == "" || q == null))q = "サイト内検索";
+  $(".gcse__form input:text").val(q);
+});
+</script>
+</head>
+<body id="search">
+    <header>
+        
+<div id="hd_main">
+	<div class="wrapper cFix">
+		<div class="left cFix">
+			<h1><a href="./top.html"><img src="./hd_logo.png" alt="ほらがい同好会" class="logo"></a></h1>
+		</div>
+		<div class="right cFix">
+			<ul class="top">
+				<li class="pamphlet"><a href="./panf.pdf">パンフレット</a></li>
+				<li class="txt"><a href="./event.html">イベント情報</a></li>
+				<li class="txt"><a href="./news.html">お知らせ</a></li>
+			</ul>
+			<ul class="bottom">
+				<li class="search">
+					<form action="./search.html">
+						<input type="text" name="q" placeholder="サイト内検索" />
+						<button type="submit"></button>
+					</form>
+				</li>
+				<li class="fsize"> <span>文字サイズ</span>
+					<input id="sizeMid" type="radio" name="size">
+					<label for="sizeMid"></label>
+					<input id="sizeLarge" type="radio" name="size">
+					<label for="sizeLarge"></label>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div id="hd_sp">
+			  <div class="btn_menu"> <span class="btn"></span> </div>
+			</div>
+		  </div>
+		  <div id="hd_global">
+			<nav class="wrapper cFix">
+			  <div class="sp__menu__search hidden-pc">
+				<form action="./search.html">
+				  <input type="text" name="q" placeholder="サイト内検索" />
+				  <button type="submit"></button>
+				</form>
+			  </div>
+			  <ul class="cFix">
+				<li><a href="./top.html" class="home">ホーム</a></li>
+				<li> <a href="./syoukai.html" class="about">同好会のご紹介</a>
+					<li><a href="./aisatu.html">ごあいさつ</a></li>
+					<li><a href="./gaiyou.html">同好会概要</a></li>
+					<li><a href="./event.html" >イベント情報</a></li>
+					<li><a href="./panf.pdf" target="_blank">パンフレット</a></li>
+					<li><a href="./month.html">月間目標</a></li>
+				<li><a href="./news.html">お知らせ</a></li>
+				<li><a href="./国家試験対策/診療放射線技師国家試験　対策ノート.html">国家試験対策</a></li>
+						</ul>
+	</nav>
+</div>
+
+    </header>
+    <div id="contents">
+      <div class="wrapper">
+        <div class="ttl_box">
+            <p class="ttl_a">サイト内検索</p>
+        </div>
+        <div class="gcse__wrap">
+          <div class="gcse__form">
+            <form action="./search.html">
+              <input type="text" name="q" placeholder="サイト内検索" value="">
+              <button type="submit">検索する<i class="icon"></i></button>
+            </form>
+          </div>
+          <div class="gcse__script">
+            <script>
+            (function()
+            {
+              var cx = '51628e073ce1bb407';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+            </script>
+            <gcse:searchresults-only></gcse:searchresults-only>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cmn__pan">
+        <ol>
+            <li><a href="./top.html">ほらがい同好会</a></li>
+            <li>サイト内検索</li>
+        </ol>
+    </div>
+    <footer>
+        
+		<div id="sitemap">
+			<div class="wrapper cFix">
+				<ul class="top">
+					<li><a href="./top.html"><img src="./ft_logo.png" alt="ほらがい同好会 トップ"></a></li>
+				</ul>
+				<ul>
+					<li>
+						<a href="./syoukai.html" class="about">病院のご紹介</a>
+						<ul>
+							<li><a href="./aisatu.html">ごあいさつ</a></li>
+							<li><a href="./gaiyou.html">同好会概要</a></li>
+							<li><a href="./event.html">イベント情報</a></li>
+							<li><a href="./panf.pdf" target="_blank">パンフレット</a></li>
+							<li><a href="./month.html">月間目標</a></li>
+							<li><a href="./news.html">お知らせ</a></li>
+							<li><a href="./国家試験対策/診療放射線技師国家試験　対策ノート.html">国家試験対策</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="bottom">
+	<div class="wrapper cFix">
+		<div class="fLeft">
+			<div class="logo">
+				<a href="./top.html" class="top"><img src="./ft_logo.png" alt="ほらがい同好会" ></a>
+			</div>
+		</div>
+		<div class="fRight cFix">
+		</div>
+		<p class="copyright"> Copyright HORAGAI-DOKOKAI. All rights reserved. </p>
+	</div>
+</div>
+<div id="btt"><a href="#" class="alpha">ページの先頭へ</a></div>
+
+    </footer>
+</body>
+</html>
